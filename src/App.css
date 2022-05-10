@@ -1,38 +1,116 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100%;
+  background: rgb(227, 186, 238);
+}
+
+.container {
+  width: 30rem;
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(88, 11, 109, 0.616),
+    2px 4px 15px rgba(88, 11, 109, 0.616),
+    4px 8px 30px rgba(88, 11, 109, 0.616);
+  border-radius: 4px;
+  margin: 1.5rem auto;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .92em;
+  width: 100%;
+  height: 3rem;
+  color: #fff;
+  background: linear-gradient(170.1deg, rgb(65, 0, 109) 7.1%, rgb(3, 185, 155) 100%);
+  padding: 2rem;
+}
+
+.color-header {
+  color: rgb(0, 138, 180);
+  font-weight: 800;
+}
+
+.contact {
+  display: flex;
+
+}
+
+.contact a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.meme-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+.meme-container .input-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+
+.meme-container .input-text input {
+  padding: .5em;
+  text-indent: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(118, 0, 141);
+}
+
+.meme-container button {
+  background: linear-gradient(170.1deg, rgb(65, 0, 109) 7.1%, rgb(3, 185, 155) 100%);
+  border: none;
+  padding: 8px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.memeDiv {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  margin-top: .5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.memeDiv .bottom-text 
+, .memeDiv .top-text  {
+  position: absolute;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* left: 40%; */
+  text-shadow: 1px 1px 2px rgb(14, 13, 13);
+  color: rgb(173, 137, 90);
+  font-size: 7vmin;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
 }
-
-.App-link {
-  color: #61dafb;
+.memeDiv .top-text {
+  top: 10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.memeDiv .bottom-text {
+  bottom: 10%;
+}
+.memeDiv .meme-img {
+  width: 100%;
+  height: 100%;
 }
